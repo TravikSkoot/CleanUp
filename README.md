@@ -70,15 +70,15 @@ Make sure to modify the script to meet your specific requirements before running
 
 
 ## Support & Feedback
-🇩🇪 Wenn du auf Probleme stößt oder Vorschläge für neue Funktionen hast, kannst du diese im Abschnitt "Issues" dieses Repositories einreichen. Pull Requests sind ebenfalls willkommen!
+🇩🇪 Wenn du auf Probleme stößt oder Vorschläge für neue Funktionen hast, kannst du diese im Abschnitt [Issues](https://github.com/TravikSkoot/CleanUp/issues) dieses Repositories einreichen. [Pull requests](https://github.com/TravikSkoot/CleanUp/pulls) sind ebenfalls willkommen!
 
-🇺🇸 If you encounter any issues or have suggestions for new features, you can submit them in the "Issues" section of this repository. Pull requests are also welcome!
+🇺🇸 If you encounter any issues or have suggestions for new features, you can submit them in the [Issues](https://github.com/TravikSkoot/CleanUp/issues) section of this repository. [Pull requests](https://github.com/TravikSkoot/CleanUp/pulls) are also welcome!
 
 
 ## Contributing
-🇩🇪 Wenn du zur Entwicklung dieses Skripts beitragen möchtest, kannst du gerne einen Pull Request erstellen oder ein Issue in diesem Repository öffnen.
+🇩🇪 Wenn du zur Entwicklung dieses Skripts beitragen möchtest, kannst du gerne einen [Pull request](https://github.com/TravikSkoot/CleanUp/pulls) erstellen oder ein [Issue](https://github.com/TravikSkoot/CleanUp/issues) in diesem Repository öffnen.
 
-🇺🇸 If you'd like to contribute to the development of this script, feel free to create a pull request or open an issue in this repository.
+🇺🇸 If you'd like to contribute to the development of this script, feel free to create a [Pull requests](https://github.com/TravikSkoot/CleanUp/pulls) or open an [issue](https://github.com/TravikSkoot/CleanUp/issues) in this repository.
 
 
 ## Lizenz
