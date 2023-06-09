@@ -35,20 +35,36 @@
 ## Konfiguration
 🇩🇪 Du kannst die unterstützten Dateiendungen für verschiedene Kategorien anpassen, indem du die entsprechenden Variablen im Skript bearbeitest:
 
-- **'picture_extensions'**: Dateiendungen für Bilder
-- **'video_extensions'**: Dateiendungen für Videos
-- **'document_extensions'**: Dateiendungen für Dokumente
-- **'archive_extensions'**: Dateiendungen für Archive
+- **'picture_extensions'**
+- **'video_extensions'**
+- **'document_extensions'**
+- **'archive_extensions'**
+
+Und die Bezeichnungen der erstellten Ordner:
+- **'pictures'**
+- **'videos'**
+- **'documents'**
+- **'archives'**
+- **'folders'**
+- **'other'**
 
 Stelle sicher, dass du das Skript vor dem Ausführen anpasst, um deine spezifischen Anforderungen zu erfüllen.
 
 ## Configuration
 🇺🇸 You can customize the supported file extensions for different categories by editing the corresponding variables in the script:
 
-- **'picture_extensions'**: file extensions for images
-- **'video_extensions'**: file extensions for videos
-- **'document_extensions'**: file extensions for documents
-- **'archive_extensions'**: file extensions for archives
+- **'picture_extensions'**:
+- **'video_extensions'**:
+- **'document_extensions'**:
+- **'archive_extensions'**:
+
+The names of the created folders:
+- **'pictures'**
+- **'videos'**
+- **'documents'**
+- **'archives'**
+- **'folders'**
+- **'other'**
 
 Make sure to modify the script to meet your specific requirements before running it.
 
