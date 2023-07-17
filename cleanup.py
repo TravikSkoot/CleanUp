@@ -6,6 +6,7 @@ import shutil
 # 🇺🇸 Customize file extensions here
 picture_extensions = ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".ico"
 video_extensions = ".mp4", ".mkv", ".avi", ".mov", ".wmv"
+audio_extensions = ".mp3", ".wav", ".wma", ".aac", ".ogg", ".m4a"
 document_extensions = ".doc", ".docx", ".pdf", ".xlsx", ".pptx", ".txt"
 archive_extensions = ".zip", ".tar", ".tar.gz", ".gz", ".rar"
 
@@ -13,6 +14,7 @@ archive_extensions = ".zip", ".tar", ".tar.gz", ".gz", ".rar"
 # Names of the created folders
 pictures = "Bilder"
 videos = "Videos"
+audios = "Audios"
 documents = "Dokumente"
 archives = "Archive"
 folders = "Ordner"
@@ -38,6 +40,11 @@ video_folder = os.path.join(current_path, videos)
 if any(item.lower().endswith(video_extensions) for item in current_path_contents):
     if not os.path.exists(video_folder):
         os.mkdir(video_folder)
+
+audio_folder = os.path.join(current_path, audios)
+if any(item.lower().endswith(audio_extensions) for item in current_path_contents):
+    if not os.path.exists(video_folder):
+        os.mkdir(audio_folder)        
 
 document_folder = os.path.join(current_path, documents)
 if any(item.lower().endswith(document_extensions) for item in current_path_contents):
@@ -77,7 +84,7 @@ for item in current_path_contents:
 
     # 🇩🇪 Überspringe Ordner, die gerade erstellt wurden
     # 🇺🇸 Skip folders that were just created
-    if os.path.isdir(item_path) and item in [pictures, videos, documents, archives, folders, other]:
+    if os.path.isdir(item_path) and item in [pictures, videos, audios, documents, archives, folders, other]:
         continue
     
     # 🇩🇪 Sortiere die Dateien nach Kategorie und verschiebe sie 
@@ -87,6 +94,9 @@ for item in current_path_contents:
         
     elif item.lower().endswith((video_extensions)):
         shutil.move(item_path, os.path.join(video_folder, item))
+
+    elif item.lower().endswith((audio_extensions)):
+        shutil.move(item_path, os.path.join(audio_folder, item))
         
     elif item.lower().endswith((document_extensions)):
         shutil.move(item_path, os.path.join(document_folder, item))
