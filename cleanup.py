@@ -7,7 +7,8 @@ import shutil
 picture_extensions = ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".ico"
 video_extensions = ".mp4", ".mkv", ".avi", ".mov", ".wmv"
 audio_extensions = ".mp3", ".wav", ".wma", ".aac", ".ogg", ".m4a"
-document_extensions = ".doc", ".docx", ".pdf", ".xlsx", ".pptx", ".txt"
+document_extensions = ".doc", ".docx", ".pdf", ".xlsx", ".pptx", ".txt",
+program_extensions = ".exe", ".jar", ".msi", ".bat", ".cmd", ".run"
 archive_extensions = ".zip", ".tar", ".tar.gz", ".gz", ".rar"
 
 # Bezeichnungen der erstellten Ordner
@@ -16,6 +17,7 @@ pictures = "Bilder"
 videos = "Videos"
 audios = "Audios"
 documents = "Dokumente"
+programs = "Programme"
 archives = "Archive"
 folders = "Ordner"
 other = "Andere"
@@ -51,6 +53,11 @@ if any(item.lower().endswith(document_extensions) for item in current_path_conte
     if not os.path.exists(document_folder):
         os.mkdir(document_folder)
 
+program_folder = os.path.join(current_path, programs)
+if any(item.lower().endswith(program_extensions) for item in current_path_contents):
+    if not os.path.exists(program_folder):
+        os.mkdir(program_folder)
+
 archive_folder = os.path.join(current_path, archives)
 if any(item.lower().endswith(archive_extensions) for item in current_path_contents):
     if not os.path.exists(archive_folder):
@@ -84,7 +91,7 @@ for item in current_path_contents:
 
     # 🇩🇪 Überspringe Ordner, die gerade erstellt wurden
     # 🇺🇸 Skip folders that were just created
-    if os.path.isdir(item_path) and item in [pictures, videos, audios, documents, archives, folders, other]:
+    if os.path.isdir(item_path) and item in [pictures, videos, audios, documents, programs, archives, folders, other]:
         continue
     
     # 🇩🇪 Sortiere die Dateien nach Kategorie und verschiebe sie 
@@ -100,6 +107,9 @@ for item in current_path_contents:
         
     elif item.lower().endswith((document_extensions)):
         shutil.move(item_path, os.path.join(document_folder, item))
+
+    elif item.lower().endswith((program_extensions)):
+        shutil.move(item_path, os.path.join(program_folder, item))       
         
     elif item.lower().endswith((archive_extensions)):
         shutil.move(item_path, os.path.join(archive_folder, item))
