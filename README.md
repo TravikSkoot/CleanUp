@@ -18,7 +18,7 @@
 ## Ablauf des Skripts
 🇩🇪
 1. Nach Ausführen des Skripts ermittelt es automatisch den aktuellen Ordner, in dem es sich befindet.
-2. Es erstellt Unterverzeichnisse für Bilder, Videos, Dokumente, Archive, Ordner und andere Dateien, falls entsprechende Dateien im aktuellen Ordner gefunden werden.
+2. Es erstellt Unterverzeichnisse für Bilder, Videos, Audios, Dokumente, Programme, Archive, Ordner und andere Dateien, falls entsprechende Dateien im aktuellen Ordner gefunden werden.
 3. Das Skript durchsucht alle Dateien und Ordner im aktuellen Verzeichnis.
 4. Es überspringt das Skript selbst und Verknüpfungen.
 5. Es sortiert die Dateien anhand ihrer Dateiendungen in die entsprechenden Unterverzeichnisse.
@@ -26,7 +26,7 @@
 ## Workflow
 🇺🇸
 1. After executing the script, it automatically determines the current directory it is located in.
-2. It creates subdirectories for images, videos, documents, archives, folders and other files if corresponding files are found in the current directory.
+2. It creates subdirectories for images, videos, audios, documents, programs, archives, folders and other files if corresponding files are found in the current directory.
 3. The script searches for all files and folders in the current directory.
 4. It skips the script itself and any shortcuts.
 5. It sorts the files into the appropriate subdirectories based on their file extensions.
@@ -37,13 +37,17 @@
 
 - **'picture_extensions'**
 - **'video_extensions'**
+- **'audio_extensions'**
 - **'document_extensions'**
+- **'program_extensions'**
 - **'archive_extensions'**
 
 Und die Bezeichnungen der erstellten Ordner:
 - **'pictures'**
 - **'videos'**
+- **'audios'**
 - **'documents'**
+- **'programs'**
 - **'archives'**
 - **'folders'**
 - **'other'**
@@ -55,13 +59,17 @@ Stelle sicher, dass du das Skript vor dem Ausführen anpasst, um deine spezifisc
 
 - **'picture_extensions'**:
 - **'video_extensions'**:
+- **'audio_extensions'**
 - **'document_extensions'**:
+- **'program_extensions'**
 - **'archive_extensions'**:
 
 The names of the created folders:
 - **'pictures'**
 - **'videos'**
+- **'audios'**
 - **'documents'**
+- **'programs'**
 - **'archives'**
 - **'folders'**
 - **'other'**
@@ -82,8 +90,8 @@ Make sure to modify the script to meet your specific requirements before running
 
 
 ## Lizenz
-🇩🇪 CleanUp steht unter der [MIT](https://choosealicense.com/licenses/mit/)-Lizenz. Weitere Informationen findest du in der [LICENSE.md](https://github.com/TravikSkoot/CleanUp/blob/main/LICENSE)-Datei.
+🇩🇪 CleanUp steht unter der [MIT](https://choosealicense.com/licenses/mit/)-Lizenz. Weitere Informationen findest du in der [LICENSE](https://github.com/TravikSkoot/CleanUp/blob/main/LICENSE)-Datei.
 
-🇺🇸 CleanUp is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license. For more information, see the [LICENSE.md](https://github.com/TravikSkoot/CleanUp/blob/main/LICENSE) file.
+🇺🇸 CleanUp is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license. For more information, see the [LICENSE](https://github.com/TravikSkoot/CleanUp/blob/main/LICENSE) file.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
