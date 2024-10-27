@@ -45,7 +45,7 @@ if any(item.lower().endswith(video_extensions) for item in current_path_contents
 
 audio_folder = os.path.join(current_path, audios)
 if any(item.lower().endswith(audio_extensions) for item in current_path_contents):
-    if not os.path.exists(video_folder):
+    if not os.path.exists(audio_folder):
         os.mkdir(audio_folder)        
 
 document_folder = os.path.join(current_path, documents)
